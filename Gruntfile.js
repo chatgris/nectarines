@@ -14,33 +14,33 @@ module.exports = function (grunt) {
 
 
     grunt.initConfig({
-      jshint: {
-          options: {
-            jshintrc: '.jshintrc'
-          },
-          all: [
-              'Gruntfile.js',
-              'app/js/**/*.js',
-              '!app/js/vendor/**/*.js'
-          ]
-      },
-      sass: {
-          options: {
-              cacheLocation: '.tmp/.sass-cache'
-          },
-          dev: {
-              options: {
-                  style: 'expanded',
-                  lineComments: true
-              },
-              files: sassFiles
-          },
-          prod: {
-              options: {
-                  style: 'compressed'
-              },
-              files: sassFiles
-          }
-      }
+        jshint: {
+            options: {
+              jshintrc: '.jshintrc'
+            },
+            all: [
+                'Gruntfile.js',
+                'app/js/**/*.js',
+                '!app/js/vendor/**/*.js'
+            ]
+        },
+        sass: {
+            options: {
+                cacheLocation: '.tmp/.sass-cache'
+            },
+            dev: {
+                options: {
+                    style: 'expanded',
+                    lineComments: true
+                },
+                files: sassFiles
+            },
+            prod: {
+                options: {
+                    style: 'compressed'
+                },
+                files: sassFiles
+            }
+        }
     });
 };
